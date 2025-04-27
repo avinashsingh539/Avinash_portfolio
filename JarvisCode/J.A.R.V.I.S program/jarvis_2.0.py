@@ -56,29 +56,30 @@ except FileNotFoundError:
         "google": "https://www.google.com"
     }
     API_KEYS = {
-        "weather": "e3193c248772950985f8fb1c6c95ba85",
-        "news": "eabc9483b9f24db1b5991f7c9d7b8650",
-        "gemini": "AIzaSyBV7f9erFzs0rriOFVksUh50D61BMa03GY"  # Replace with actual key
+        "weather": "Your_weather_Api",
+        "news": "Your_news_Api",
+        "gemini": "Your_gemini_Api"  # Replace with actual key
     }
 except json.JSONDecodeError as e:
     print(f"Invalid JSON in config.json: {e}, using defaults")
     API_KEYS = {
-        "weather": "e3193c248772950985f8fb1c6c95ba85",
-        "news": "eabc9483b9f24db1b5991f7c9d7b8650",
-        "gemini": "AIzaSyBV7f9erFzs0rriOFVksUh50D61BMa03GY"  # Replace with actual key
+        "weather": "Your_weather_Api",
+        "news": "Your_news_Api",
+        "gemini": "Your_gemini_Api"  # Replace with actual key
+       
     }
 except Exception as e:
     print(f"Unexpected error loading config: {e}, using defaults")
     API_KEYS = {
-        "weather": "e3193c248772950985f8fb1c6c95ba85",
-        "news": "eabc9483b9f24db1b5991f7c9d7b8650",
-        "gemini": "AIzaSyBV7f9erFzs0rriOFVksUh50D61BMa03GY"  # Replace with actual key
+        "weather": "Your_weather_Api",
+        "news": "Your_news_Api",
+        "gemini": "Your_gemini_Api"  # Replace with actual key
     }
 
 # Initialize Wikipedia
 wiki = wikipediaapi.Wikipedia(
     language='en',
-    user_agent='JARVIS_AI/1.0 (2005singhavinash@gmail.com)'
+    user_agent='JARVIS_AI/1.0 (xyz@gmail.com)'
 )
 
 # ======================
